@@ -4,6 +4,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 100;
 }
 .header__inner {
     display: flex;
@@ -15,9 +16,10 @@
     margin: 0 auto;
 }
 .header-nav {
-    background: #909090;
+    background: #90909060;
     border: 1px solid #B0B0B0;
     border-radius: 10px;
+    
 }
 .header-nav-items {
     display: flex;
