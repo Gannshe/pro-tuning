@@ -5,5 +5,14 @@
 *::before {
     box-sizing: border-box;
 }
-
-@import "fonts"
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+$red: #BC2828;
+@import "fonts";
+@import "header"
