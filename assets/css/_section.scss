@@ -1,0 +1,55 @@
+.title {
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #000;
+    padding-top: 100px;
+}
+.block-install__des {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -2px;
+    color: #000;
+    margin: 22px 0 52px;
+
+}
+.block-install__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 34px;
+
+    &-left {
+        width: 55%;
+        background: $red;
+        border-radius: 15px;
+        padding: 45px 24px 0 50px;
+        height: 350px;
+    }
+
+    &-right {
+        border-radius: 15px;
+        overflow: hidden;
+
+    }
+}
+.install__item-left__title {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    color: $grey;
+    margin-bottom: 37px;
+    width: 90%;
+}
+.install__item-left__des {
+    font-size: 20px;
+    line-height: 23px;
+    color: $grey;
+}
+.install__item_right-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}

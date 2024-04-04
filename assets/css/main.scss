@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+$red: #BC2828;
+$grey: #F5F5F5;
+
 *,
 *::after,
 *::before {
@@ -22,6 +25,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background: $grey;
 }
 .container {
     max-width: 1200px;
@@ -29,7 +33,8 @@ body {
     padding: 0 35px;
     margin: 0 auto;
 }
-$red: #BC2828;
+
 @import "fonts";
 @import "header";
 @import "firstBlock";
+@import "section";
