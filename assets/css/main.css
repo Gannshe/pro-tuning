@@ -26,7 +26,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: #F5F5F5;
+  background-color: #F5F5F5;
 }
 
 .container {
@@ -250,7 +250,7 @@ body {
   padding-top: 100px;
 }
 
-.block-install__des {
+.standart-desc {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -331,4 +331,56 @@ body {
 }
 .process-gallery__wrap-column img {
   border-radius: 15px;
+}
+
+.sim-card-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 34px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sim-card-item {
+  background: #BC2828;
+  border-radius: 20px;
+  padding: 33px 45px 0 25px;
+  width: 31%;
+  height: 370px;
+}
+.sim-card-item__title {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  color: #F5F5F5;
+  margin-bottom: 30px;
+  width: 90%;
+}
+.sim-card-item__des {
+  font-size: 18px;
+  line-height: 23px;
+  color: #F5F5F5;
+}
+.sim-card-item-white {
+  background: #EEEEEE;
+  border-radius: 20px;
+  padding: 33px 45px 0 25px;
+  width: 31%;
+  height: 370px;
+}
+.sim-card-item-white__title {
+  color: #000;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+.sim-card-item-white__des {
+  color: #000;
+  font-size: 18px;
+  line-height: 23px;
 }

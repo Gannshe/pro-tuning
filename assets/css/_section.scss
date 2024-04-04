@@ -6,7 +6,7 @@
     color: #000;
     padding-top: 100px;
 }
-.block-install__des {
+.standart-desc {
     text-align: center;
     font-size: 30px;
     line-height: 36px;
@@ -69,6 +69,58 @@
 
         & img {
             border-radius: 15px;
+        }
+    }
+}
+.sim-card {
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 34px;
+        justify-content: space-between;
+    }
+    &-item {
+        background: $red;
+        border-radius: 20px;
+        padding: 33px 45px 0 25px;
+        width: 31%;
+        height: 370px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: -1px;
+            color: $grey;
+            margin-bottom: 30px;
+            width: 90%;
+        }
+        &__des {
+            font-size: 18px;
+            line-height: 23px;
+            color: $grey;
+        }
+
+        &-white {
+            background: #EEEEEE;
+            border-radius: 20px;
+            padding: 33px 45px 0 25px;
+            width: 31%;
+            height: 370px;
+
+            &__title {
+                color: #000;
+                font-size: 30px;
+                line-height: 36px;
+                letter-spacing: -1px;
+                margin-bottom: 30px;
+                width: 90%;
+            }
+            &__des {
+                color: #000;
+                font-size: 18px;
+                line-height: 23px;
+            }
         }
     }
 }
