@@ -176,7 +176,7 @@
         &__img {
             border-radius: 20px;
         }
-        
+
         &__title {
             font-size: 34px;
             line-height: 36px;
@@ -186,6 +186,66 @@
         &__des {
             font-size: 23px;
             line-height: 27px;
+        }
+    }
+}
+.service {
+    padding-bottom: 100px;
+}
+.service-table {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    & div {
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    &-short-name {
+        color: $red;
+        padding: 12px 24px;
+        font-size: 23px;
+        line-height: 18px;
+        width: 33%;
+    }
+    &-long-name {
+        color: $red;
+        padding: 12px 24px;
+        font-size: 23px;
+        line-height: 18px;
+        width: 66%;
+    }
+    &-short {
+        padding: 0 24px;
+        font-size: 24px;
+        line-height: 28px;
+        width: 33%;
+        height: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    &-long {
+        padding: 0 24px;
+        font-size: 20px;
+        line-height: 23px;
+        width: 66%;
+        height: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & ul li {
+            list-style: disc;
+            margin: 0 24px 0;
+        }
+    }
+
+    &-small {
+        margin-bottom: 0;
+        & div {
+            height: 100px;
         }
     }
 }
