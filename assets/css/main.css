@@ -26,7 +26,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   overflow-x: hidden;
 }
 
@@ -436,4 +436,32 @@ body {
   border-radius: 16px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.block-expert__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 34px;
+}
+.block-expert__wrap-item {
+  width: 16;
+  padding: 34px;
+  background: #EEEEEE;
+  border-radius: 20px;
+}
+.block-expert__wrap-item__img {
+  border-radius: 20px;
+}
+.block-expert__wrap-item__title {
+  font-size: 34px;
+  line-height: 36px;
+  margin: 48px 0 62px;
+}
+.block-expert__wrap-item__des {
+  font-size: 23px;
+  line-height: 27px;
 }

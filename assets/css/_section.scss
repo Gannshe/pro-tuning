@@ -162,3 +162,30 @@
         }
     }
 }
+.block-expert__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+
+    &-item {
+        width: calc(100 / 2 - 34);
+        padding: 34px;
+        background: #EEEEEE;
+        border-radius: 20px;
+
+        &__img {
+            border-radius: 20px;
+        }
+        
+        &__title {
+            font-size: 34px;
+            line-height: 36px;
+            margin: 48px 0 62px;
+        }
+
+        &__des {
+            font-size: 23px;
+            line-height: 27px;
+        }
+    }
+}
