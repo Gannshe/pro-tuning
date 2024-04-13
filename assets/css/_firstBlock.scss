@@ -28,6 +28,9 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.first-block__img-mobile {
+    display: none;
+}
 .first-block__text {
     padding: 88px 0 0;
     color: #fff;
@@ -83,4 +86,7 @@
         scale: 1.05;
         background: rgba(144, 144, 144, 0.85);
     }
+}
+.first-block__down-mobile {
+    display: none;
 }

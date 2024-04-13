@@ -3,6 +3,9 @@
 $red: #BC2828;
 $grey: #F5F5F5;
 
+html {
+    scroll-behavior: smooth;
+}
 *,
 *::after,
 *::before {
@@ -27,6 +30,8 @@ body {
     font-style: normal;
     background-color: #FFFFFF;
     overflow-x: hidden;
+
+
 }
 .container {
     max-width: 1200px;
@@ -39,5 +44,6 @@ body {
 @import "header";
 @import "firstBlock";
 @import "section";
+@import "footer";
 @import "mobile";
 

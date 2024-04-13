@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Русификация китайских автомобилей</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/cropped-favicon-32x32.ico">
     <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/itc-slider.css">
+    <link rel="stylesheet" href="/assets/css/main.css?v=3">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/itc-slider.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -16,27 +20,45 @@
            
             <nav class="header-nav">
                 <ul class="header-nav-items">
-                    <li class="menu-item"><a href="#" class="menu-link">Услуги</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Процесс</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Варианты</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Кейсы</a></li>
+                    <li class="menu-item"><a href="#install" class="menu-link">Услуги</a></li>
+                    <li class="menu-item"><a href="#expert" class="menu-link">Процесс</a></li>
+                    <li class="menu-item"><a href="#service" class="menu-link">Варианты</a></li>
+                    <li class="menu-item"><a href="#reviews" class="menu-link">Кейсы</a></li>
                 </ul>
             </nav>
             <div class="header-number">
                 <a href="tel:+79332220800" class="header-number__link">+7 933 222 08 00</a>
             </div>
         </div>
+        <div class="header__inner-mobile">
+            <div class="header__inner-mobile-nav">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label class="burger" for="burger-checkbox"></label>
+                <ul class="menu-list roboto-medium">
+                    <li><a href="#install" class="menu-item-mobile">Услуги</a><li>
+                    <li><a href="#expert" class="menu-item-mobile">Процесс</a><li>
+                    <li><a href="#service" class="menu-item-mobile">Варианты</a><li>
+                    <li><a href="#reviews" class="menu-item-mobile">Кейсы</a><li>
+                </ul>
+            </div>
+            <img src="/assets/img/logo.svg" alt="" width="119" class="header-mobile__logo">
+            <a href="tel:+79332220800" class="header__inner-mobile-link">
+                <img src="assets/img/icon-tel.svg" alt="">
+            </a>
+        </div>
+        
     </header>
 
     <section class="first-block">
         <div class="container first-block__inner">
             <img src="/assets/img/car.png" alt="" class="first-block__img">
+            <img src="/assets/img/car-mobile.png" alt="" class="first-block__img-mobile">
             <div class="first-block__text">
                 <div class="first-block__text__inner">
                    <h1 class="first-block__text-title roboto-bold"><span>Русификация</span> <br>  китайских <br> автомобилей</h1>
                     <div class="first-block__text-desc roboto-regular">Русификация и установка приложений <br>
                         на всех экранах для LiXiang Zeekr Voyah</div>
-                    <a href="" class="first-block__text-button roboto-medium">Записаться на установку</a> 
+                    <a href="#form-contact" class="first-block__text-button roboto-medium">Записаться на установку</a> 
                 </div>
                 <div class="first-block__icons">
                     <img src="/assets/img/icon-ym.png" width="76" height="76" alt="" class="first-block__icons-item">
@@ -83,9 +105,61 @@
                         поддержка</div>
                 </div>
             </div>
+
+            <div class="first-block__down-mobile">
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item first-block__down-mobile-flex">
+                                <div class="first__down-item">
+                                    <div class="first__down-item-img">
+                                        <img src="assets/img/down-1.png" alt="" fill="#fff">
+                                    </div>
+                                    <div class="first__down-item-text roboto-regular">5 лет работаем <br>
+                                        с электронными
+                                        блоками автомобилей</div>
+                                </div>
+                
+                                <div class="first__down-item">
+                                    <div class="first__down-item-img">
+                                        <img src="assets/img/down-2.png" alt="">
+                                    </div>
+                                    <div class="first__down-item-text roboto-regular">Выезжаем на место
+                                        парковки вашего
+                                        автомобиля</div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item first-block__down-mobile-flex">
+                                <div class="first__down-item">
+                                    <div class="first__down-item-img">
+                                        <img src="assets/img/down-3.png" alt="">
+                                    </div>
+                                    <div class="first__down-item-text roboto-regular">За 2 часа полностью
+                                        русифицируем ваш
+                                        автомобиль</div>
+                                </div>
+                
+                                <div class="first__down-item">
+                                    <div class="first__down-item-img">
+                                        <img src="assets/img/down-4.png" alt="">
+                                    </div>
+                                    <div class="first__down-item-text roboto-regular">12 месяцев гарантии
+                                        и полная техническая
+                                        поддержка</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <ol class="itc-slider-indicators">
+                        <li class="itc-slider-indicator" data-slide-to="0"></li>
+                        <li class="itc-slider-indicator" data-slide-to="1"></li>
+                  </ol>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="container block-install">
+
+    <section id="install" class="container block-install">
         <h2 class="block-install__title title roboto-bold">Установка <br> приложений</h2>
         <div class="block-install__des standart-desc roboto-regular">Позволит быть всегда на связи с окружающим миром</div>
         <div class="block-install__items">
@@ -170,6 +244,50 @@
             <div class="sim-card-item">
                 <div class="sim-card-item__title roboto-bold">Безлимитный интернет 4G</div>
                 <div class="sim-card-item__des roboto-regular">Клиентам предоставляется возможность оформить карту с безлимитным доступом к интернету 4G</div>
+            </div>
+        </div>
+        <div class="sim-card-items-mobile">
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                    <div class="itc-slider-items">
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="sim-card-item">
+                                <div class="sim-card-item__title roboto-bold">Обновление автомобиля</div>
+                                <div class="sim-card-item__des roboto-regular">Вы получите доступ ко всем последним улучшениям от производителя и новым функциям вашего автомобиля.</div>
+                            </div>
+                            <div class="sim-card-item-white">
+                                <div class="sim-card-item-white__title roboto-bold">Просмотр контента</div>
+                                <div class="sim-card-item-white__des roboto-regular">Настройка приложений для удобного прослушивания музыки, просмотра фильмов и выполнения разнообразных задач.</div>
+                            </div>
+                        </div>
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="sim-card-item">
+                                <div class="sim-card-item__title roboto-bold">Мобильное приложение</div>
+                                <div class="sim-card-item__des roboto-regular">Планируйте автоматический запуск автомобиля, регулируйте климат и уровень заряда через мобильное приложение, обеспечивая полный контроль над вашим транспортным средством.</div>
+                            </div>
+                
+                            <div class="sim-card-item-white">
+                                <div class="sim-card-item-white__title roboto-bold">Навигация на дороге</div>
+                                <div class="sim-card-item-white__des roboto-regular">Русскоязычные сервисы, предоставляющие удобные инструменты для планирования маршрутов и оценки текущей ситуации на дорогах.</div>
+                            </div>
+                        </div>
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="sim-card-item">
+                                <div class="sim-card-item__title roboto-bold">Настройка времени</div>
+                                <div class="sim-card-item__des roboto-regular">Настройка временной зоны в соответствии с местом проживания</div>
+                            </div>
+                            <div class="sim-card-item-white">
+                                <div class="sim-card-item-white__title roboto-bold">Безлимитный интернет 4G</div>
+                                <div class="sim-card-item-white__des roboto-regular">Клиентам предоставляется возможность оформить карту с безлимитным доступом к интернету 4G</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <ol class="itc-slider-indicators">
+                    <li class="itc-slider-indicator" data-slide-to="0"></li>
+                    <li class="itc-slider-indicator" data-slide-to="1"></li>
+                    <li class="itc-slider-indicator" data-slide-to="3"></li>
+              </ol>
             </div>
         </div>
     </section>
@@ -260,7 +378,8 @@
             </div>
         </div>  
     </section>
-    <section class="container block-expert">
+    
+    <section id="expert" class="container block-expert">
         <h3 class="sim-card__title title roboto-bold">Профессиональная <br> установка от 1 часа</h3>
         <div class="standart-desc roboto-regular">Мастера наизусть знают порядок установки и меры безопасностис</div>
         <div class="block-expert__wrap">
@@ -281,14 +400,14 @@
             </div>
         </div>
     </section>
-    <section class="container service">
+    <section id="service" class="container service">
         <h3 class="title roboto-bold">Услуги по <br> моделям авто</h3>
-        <div class="standart-desc roboto-regular">Проконсультируем и поможем выбрать подходящий вариант</div>
-        <div class="service-table">
+        <div class="service-des standart-desc roboto-regular">Проконсультируем и поможем выбрать подходящий вариант</div>
+        <div class="service-table mobile-hidden">
             <div class="service-table-short-name roboto-bold">Модель</div>
             <div class="service-table-long-name roboto-bold">Наименование услуг</div>
         </div>
-        <div class="service-table">
+        <div class="service-table mobile-hidden">
             <div class="service-table-short roboto-bold">L7/L8/L9 <br> AIR/PRO/MAX</div>
             <div class="service-table-long roboto-regular">
                 <ul>
@@ -300,7 +419,7 @@
             </div>
         </div>
 
-        <div class="service-table">
+        <div class="service-table mobile-hidden">
             <div class="service-table-short roboto-bold">Zeekr 001/X</div>
             <div class="service-table-long roboto-regular">
                 <ul>
@@ -313,7 +432,7 @@
             </div>
         </div>
 
-        <div class="service-table">
+        <div class="service-table mobile-hidden">
             <div class="service-table-short roboto-bold">Voyah Free рестайлинг</div>
             <div class="service-table-long roboto-regular">
                 <ul>
@@ -325,12 +444,12 @@
             </div>
         </div>
 
-        <div class="service-table" style="justify-content: end;">
+        <div class="service-table mobile-hidden" style="justify-content: end;">
             
             <div class="service-table-long-name roboto-bold" style="width: calc(66% - 20px);">Дополнительные услуги</div>
         </div>
 
-        <div class="service-table">
+        <div class="service-table mobile-hidden">
             <div class="service-table-short roboto-bold">L7/L8/L9 <br> AIR/PRO/MAX</div>
             <div class="service-table-long roboto-regular">
                 <ul>
@@ -342,7 +461,7 @@
             </div>
         </div>
 
-        <div class="service-table service-table-small" >
+        <div class="service-table service-table-small mobile-hidden" >
             <div class="service-table-short roboto-bold">Zeekr 001/X <br> Voyah Free рестайлинг</div>
             <div class="service-table-long roboto-regular">
                 <ul>
@@ -351,8 +470,100 @@
             </div>
         </div>
 
+        <div class="service-mobile__slider">
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                    <div class="itc-slider-items">
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="service-table">
+                                <div class="service-table-short roboto-bold">L7/L8/L9 AIR/PRO/MAX</div>
+                                <div class="service-table-long roboto-regular">
+                                    <ul>
+                                        <li>Установка одного слота под сим-карту (внутри блока)</li>
+                                        <li>Установка приложений</li>
+                                        <li>Установка магазинов приложений</li>
+                                        <li>Русификация автомобиля</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="service-table">
+                                <div class="service-table-short roboto-bold">Zeekr 001/X</div>
+                                <div class="service-table-long roboto-regular">
+                                    <ul>
+                                        <li>Установка одного слота сим-карты на шлейфе за пределы блока</li>
+                                        <li>Установка приложений</li>
+                                        <li>Установка магазинов приложений</li>
+                                        <li>Русификация/перевод на английский язык</li>
+                                        <li>Русификация проекции и руля</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="service-table">
+                                <div class="service-table-short roboto-bold">Voyah Free рестайлинг</div>
+                                <div class="service-table-long roboto-regular">
+                                    <ul>
+                                        <li>Установка одного слота сим-карты на шлейфе за пределы блока</li>
+                                        <li>Установка приложений</li>
+                                        <li>Установка магазинов приложений</li>
+                                        <li>Русификация автомобиля</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <ol class="itc-slider-indicators">
+                    <li class="itc-slider-indicator" data-slide-to="0"></li>
+                    <li class="itc-slider-indicator" data-slide-to="1"></li>
+                    <li class="itc-slider-indicator" data-slide-to="2"></li>
+              </ol>
+            </div>
+        </div>
+        <div class="service-table mobile-open" style="justify-content: end;    align-items: end;margin-top: 40px;">
+            
+            <div class="service-table-long-name roboto-bold" style="width: calc(66% - 20px);">Дополнительные услуги</div>
+        </div>
+        <div class="service-mobile__slider">
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                    <div class="itc-slider-items">
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="service-table">
+                                <div class="service-table-short roboto-bold">L7/L8/L9 AIR/PRO/MAX</div>
+                                <div class="service-table-long roboto-regular">
+                                    <ul>
+                                        <li>Выезд по Краснодару</li>
+                                        <li>Установка одного слота сим-карты на шлейфе за пределы блока</li>
+                                        <li>Установка второго слота сим-карты внутри блока</li>
+                                        <li>Установка двух слотов сим-карт за пределами блока</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider-item first-block__down-mobile-flex">
+                            <div class="service-table" >
+                                <div class="service-table-short roboto-bold">Zeekr 001/X Voyah Free рестайлинг</div>
+                                <div class="service-table-long roboto-regular">
+                                    <ul>
+                                        <li>Выезд по Краснодару</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <ol class="itc-slider-indicators">
+                    <li class="itc-slider-indicator" data-slide-to="0"></li>
+                    <li class="itc-slider-indicator" data-slide-to="1"></li>
+              </ol>
+            </div>
+        </div>
     </section>
-    <section class="reviews">
+    <section id="reviews" class="reviews">
         <div class="container reviews__inner">
             <h3 class="title roboto-bold">>570 довольных клиентов</h3>
             <div class="standart-desc roboto-regular">Оказываем услуги в г. Краснодар</div>
@@ -384,7 +595,7 @@
                     </div>
                 </div>
             </div>    
-            <div class="reviews__inner-wrap">
+            <div class="reviews__inner-wrap" style="margin-top: 35px;">
                 <div class="reviews__inner-wrap-item">
                     <div class="reviews__inner-wrap-item-left">
                         <div class="reviews__inner-wrap-item-left__title roboto-bold" >Владелец <br>
@@ -410,17 +621,163 @@
                     </div>
                 </div>
             </div>
+
+            <div class="reviews__inner-wrap-mobile">
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item first-block__down-mobile-flex">
+                                <div class="reviews__inner-wrap-item">
+                                    <div class="reviews__inner-wrap-item-left">
+                                        <div class="reviews__inner-wrap-item-left__title roboto-bold">Подключили
+                                            к интернету Voyah Free в Краснодаре</div>
+                                        <div class="reviews__inner-wrap-item-left__des roboto-regular">Автомобиль Voyah Free оснащен возможностью установки только сим-карты. Для подключения сим-карты к компьютеру автомобиля был создан специальный слот, размещенный на шлейфе внутри блока.
+                                            <br><br>
+                                            Этот метод размещения был выбран клиентом для удобной замены сим-карты при необходимости.</div>
+                                    </div>
+                                    <div class="reviews__inner-wrap-item-right">
+                                        <img src="/assets/img/reviews/review-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item first-block__down-mobile-flex">
+                                <div class="reviews__inner-wrap-item">
+                                    <div class="reviews__inner-wrap-item-left">
+                                        <div class="reviews__inner-wrap-item-left__title roboto-bold" >Оснащение интернетом на выезде трех автомобилей Lixiang</div>
+                                        <div class="reviews__inner-wrap-item-left__des roboto-regular">Автомобиль L9 PRO теперь оснащен специальным дополнительным слотом для установки сим-карты. 
+                                            <br><br>
+                                            Этот метод выбран клиентом для удобной замены сим-карты.
+                                            <br><br>
+                                            Также был установлен мастер аккаунт с передачей прав.</div>
+                                    </div>
+                                    <div class="reviews__inner-wrap-item-right">
+                                        <img src="/assets/img/reviews/review-2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item first-block__down-mobile-flex">
+                                <div class="reviews__inner-wrap-item">
+                                    <div class="reviews__inner-wrap-item-left">
+                                        <div class="reviews__inner-wrap-item-left__title roboto-bold" >Владелец <br>
+                                            Geely Monjaro</div>
+                                        <div class="reviews__inner-wrap-item-left__des roboto-regular">Нашими специалистами провели русификацию нового Geely Monjaro. 
+                                            <br><br>
+                                            Дополнительно установили все необходимые приложения, а также оформили сим карту для комфортного использования всех функций.</div>
+                                    </div>
+                                    <div class="reviews__inner-wrap-item-right">
+                                        <img src="/assets/img/reviews/review-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item first-block__down-mobile-flex">
+                                <div class="reviews__inner-wrap-item">
+                                    <div class="reviews__inner-wrap-item-left">
+                                        <div class="reviews__inner-wrap-item-left__title roboto-bold" >В работе представитель марки автомобилей LiXiang в Краснодаре</div>
+                                        <div class="reviews__inner-wrap-item-left__des roboto-regular">Наш очередной пациент - LiXiang.
+                                            <br><br>
+                                            Провели русификацию и установку сим слота с дополнением необходимых приложений, а также установка мастер-аккаунта с передачей номера и управлением автомобиля дистанционно.</div>
+                                    </div>
+                                    <div class="reviews__inner-wrap-item-right">
+                                        <img src="/assets/img/reviews/review-4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <ol class="itc-slider-indicators">
+                        <li class="itc-slider-indicator" data-slide-to="0"></li>
+                        <li class="itc-slider-indicator" data-slide-to="1"></li>
+                        <li class="itc-slider-indicator" data-slide-to="2"></li>
+                        <li class="itc-slider-indicator" data-slide-to="3"></li>
+                  </ol>
+                </div>
+            </div>
             
         </div>
     </section>
-    <section class="container block-form">
+    <section id="form-contact" class="container block-form">
         <div class="block-form__left">
             <img src="assets/img/form-img.jpg" alt="">
         </div>
         <div class="block-form__right">
             <div class="block-form__right-title roboto-bold">Записаться на установку и получить скидку до -15%</div>
             <div class="block-form__right-des roboto-regular">Оставьте Ваш номер, мы перезвоним и проконсультируем!</div>
+            <script data-b24-form="inline/233/u0z193" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://bitrix.protuning-company.ru/upload/crm/form/loader_233_u0z193.js');</script>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__wrap">
+                <div class="footer__wrap-item">
+                    <img src="/assets/img/logo-footer.svg" alt="" width="119" class="footer-logo">
+                    <div class="city-block roboto-regular">
+                        <a href="#" class="city-block-link">ростов-на-дону</a>
+                        <a href="#" class="city-block-link">сочи</a>
+                        <a href="#" class="city-block-link">краснодар</a>
+                        <a href="#" class="city-block-link">Москва</a>
+                    </div>
+                    <a href="https://protuning-service.ru/" class="footer__wrap-item-button roboto-bold">Автосервис</a>
+                    <a href="https://protuning-company.ru/" class="footer__wrap-item-button roboto-bold">Тюнинг</a>
+                </div>
+                <div class="footer__wrap-item">
+                    <ul class="footer__list" style="margin-bottom: 21px;">
+                        <li class="footer__list-item-name roboto-bold">услуги</li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/partners">Автомобили от партнеров</a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/kreditovaniye/">Кредит</a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/strakhovaniye/">Страхование </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/buyonline">Покупка онлайн с доставкой</a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/comission">Комиссионная продажа</a></li>
+                    </ul>
+                    <a href="https://protuning-service.ru/" class="footer__wrap-item-button roboto-bold">Автосервис</a>
+                    <a href="https://protuning-company.ru/" class="footer__wrap-item-button roboto-bold">Тюнинг</a>
+                </div>
+                <div class="footer__wrap-item">
+                    <ul class="footer__list">
+                        <li class="footer__list-item-name roboto-bold">купить</li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/shop">Легковые автомобили </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/shop/?filter_hot=да">Горящие предложения</a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap-item">
+                    <ul class="footer__list">
+                        <li class="footer__list-item-name roboto-bold">компания</li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/about/">О нас</a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/contacts/">Контакты</a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/jobs/">Вакансии </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                        <li class="footer__list-item roboto-regular"><a href="https://protuning-autotrade.ru/#podborki">Подборки </a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap-item">
+                    <a href="tel:84951299275" class="footer__wrap-item-number roboto-bold">8 (495) 129-02-75</a>
+                    <a href="tel:88612052901" class="footer__wrap-item-number roboto-bold">8 (861) 205-29-01</a>
+                    <a href="mailto:info@protuning-autotrade.ru" class="footer__wrap-item-number roboto-regular">info@protuning-autotrade.ru</a>
+                    <div class="footer__wrap-item-social">
+                        <a href="https://vk.com/club213510249" class="footer__wrap-item-social-link">
+                            <img src="assets/img/icon-vk.svg" alt="" width="23" height="23" class="footer__wrap-item-social-img">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCrTjeOzjErE312NIYEgGiTg" class="footer__wrap-item-social-link">
+                            <img src="assets/img/icon-youtube.svg" alt="" width="23" height="23" class="footer__wrap-item-social-img">
+                        </a>
+                        <a href="https://t.me/protuningautotrade" class="footer__wrap-item-social-link">
+                            <img src="assets/img/icon-telegram.svg" alt="" width="23" height="23" class="footer__wrap-item-social-img">
+                        </a>
+                    </div>
+                    <a href="https://t.me/protuning_krd" class="footer__wrap-item-button roboto-bold">Написать в Telegram</a>
+                    <a href="https://wapp.click/79280350833" class="footer__wrap-item-button roboto-bold">Написать в Watsapp</a>
+                </div>
+            </div>
+            <div class="footer__wrap-down">
+                <div class="footer__wrap-down-text">© 2024 автосервис Pro-Tuning</div>
+                <a href="" class="footer__wrap-down-text">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
